@@ -1,0 +1,43 @@
+$blue: #99afe0;
+$green: #c9f079;
+$pink: #feb7d7;
+$peach: #ffdab5;
+
+.card {
+	@apply text-2xl border text-center mx-auto py-5 mr-7 my-6 cursor-pointer;
+	width: 240px;
+	border-radius: 140px;
+}
+.main {
+	@apply px-36 cursor-pointer py-5 bg-secondaryColor text-center text-2xl my-9;
+	border-radius: 170px;
+	width: 346px;
+}
+.peach {
+	border-color: $peach;
+	&:active {
+		@apply text-black;
+		background-color: $peach;
+	}
+}
+.green {
+	border-color: $green;
+	&:active {
+		@apply text-black;
+		background-color: $green;
+	}
+}
+.blue {
+	border-color: $blue;
+	&:active {
+		@apply text-black;
+		background-color: $blue;
+	}
+}
+.pink {
+	border-color: $pink;
+	&:active {
+		@apply text-black;
+		background-color: $pink;
+	}
+}

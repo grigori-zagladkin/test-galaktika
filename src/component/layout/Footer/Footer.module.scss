@@ -1,0 +1,53 @@
+.footer {
+	@apply pt-[50px] bg-white rounded-t-[90px];
+	&Title {
+		@apply text-[30px] font-bold;
+	}
+	&TopBlock {
+		@apply flex items-start justify-between mb-[30px];
+		> div {
+			@apply flex flex-col gap-[16px] text-dark text-[24px];
+		}
+	}
+
+	&Certif {
+		background-color: #d9d9d9;
+		height: 110px;
+		width: 81px;
+	}
+
+	&Contacts {
+		max-width: 416px;
+	}
+
+	&Icons {
+		@apply flex justify-center gap-[20px] mt-[30px];
+		> div {
+			@apply flex items-center justify-center;
+			border: 2px solid rgba(128, 135, 143, 1);
+			width: 70px;
+			height: 70px;
+			border-radius: 35px;
+			> svg {
+				@apply cursor-pointer;
+				display: block;
+				padding: 25px 18px;
+			}
+		}
+		&Block {
+			@apply mr-32;
+		}
+	}
+
+	&Educate {
+		@apply text-gray text-2xl flex flex-col gap-6;
+	}
+
+	&MidBlock {
+		@apply mt-10 flex justify-between text-gray underline mb-6 text-xl;
+	}
+
+	&BotBlock {
+		@apply text-gray flex gap-10 text-xl;
+	}
+}

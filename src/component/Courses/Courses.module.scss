@@ -1,0 +1,42 @@
+.courses {
+	margin-top: 100px;
+	hr {
+		@apply border-secondaryColor my-6;
+	}
+	> div {
+		@apply flex flex-col items-center;
+		.descr {
+			@apply text-4xl text-black my-12;
+		}
+
+		.infoBlock {
+			@apply flex flex-col gap-24 w-full;
+		}
+
+		.infoItemWrapper {
+			@apply pl-12 py-12 pr-24 bg-white rounded-3xl;
+			width: 907px;
+			font-size: 40px;
+			&:nth-child(2) {
+				align-self: flex-end;
+				max-width: 733px;
+				> p {
+					max-width: 600px;
+				}
+			}
+			&:nth-child(4) {
+				align-self: flex-end;
+				max-width: 1026;
+			}
+		}
+
+		.infoItemOrder {
+			@apply text-subColor border-2 border-subColor flex items-center justify-center mb-6;
+			font-size: 40px;
+			font-style: italic;
+			width: 100px;
+			height: 100px;
+			border-radius: 50%;
+		}
+	}
+}

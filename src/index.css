@@ -1,0 +1,45 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+	font-weight: 400;
+	font-family: Liberation Sans;
+	src: url('./assets/fonts/LiberationSans-Regular.ttf');
+}
+
+@font-face {
+	font-weight: 800;
+	font-family: Liberation Sans;
+	src: url('./assets/fonts/LiberationSans-Bold.ttf');
+}
+
+@font-face {
+	font-weight: 800;
+	font-family: Liberation Sans;
+	font-style: italic;
+	src: url('./assets/fonts/LiberationSans-BoldItalic.ttf');
+}
+
+@font-face {
+	font-weight: 400;
+	font-family: Liberation Sans;
+	font-style: italic;
+	src: url('./assets/fonts/LiberationSans-Italic.ttf');
+}
+*,
+*::after,
+*::before {
+	box-sizing: border-box;
+}
+
+body {
+	@apply bg-bgColor;
+	font-family: Liberation Sans;
+}
+
+.container-app {
+	@apply mx-auto;
+	max-width: 1340px;
+	width: 100%;
+}

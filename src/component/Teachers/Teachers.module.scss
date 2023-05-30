@@ -1,0 +1,36 @@
+.teachers {
+	@apply bg-white py-12;
+	margin-top: 100px;
+	background-color: white;
+	border: 1px solid white;
+	border-radius: 100px;
+	> div {
+		@apply flex flex-col items-center;
+		h1 {
+			@apply mb-10;
+		}
+	}
+	.subjectCards {
+		@apply flex flex-wrap items-center justify-center;
+	}
+
+	.teacherInfo {
+		@apply mt-12 w-full flex;
+		> div {
+			font-size: 40px;
+		}
+		ul {
+			@apply mt-8 pl-6 flex flex-col gap-6;
+			list-style-type: disc;
+			font-size: 24px;
+		}
+	}
+
+	.teacherImage {
+		@apply block;
+		align-self: start;
+		width: 542px;
+		max-width: 542px;
+		margin-right: 55px;
+	}
+}

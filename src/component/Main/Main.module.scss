@@ -1,0 +1,22 @@
+.main {
+	@apply mt-24 bg-white py-12 flex flex-col items-center justify-center;
+	border-radius: 90px;
+	> h1 {
+		@apply mb-8;
+	}
+
+	& h1:nth-child(2n) {
+		@apply flex;
+	}
+	.promo {
+		@apply py-5 px-[130px] mx-auto rounded-full bg-secondaryColor text-subColor text-7xl;
+		max-width: 470px;
+	}
+	.descr {
+		@apply text-4xl text-subColor mt-2 mb-10;
+		line-height: 1.15;
+	}
+	.buttons {
+		@apply flex gap-5;
+	}
+}

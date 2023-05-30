@@ -1,0 +1,28 @@
+.header {
+	@apply flex bg-white justify-between items-center mt-14 rounded-full py-2 px-10 text-dark;
+	.logo {
+		@apply cursor-pointer;
+	}
+
+	.nav {
+		> ul {
+			@apply flex;
+			max-width: 520px;
+			> li {
+				@apply mr-20 text-2xl flex flex-col items-center;
+				> a {
+					@apply block;
+					&:hover + img {
+						opacity: 1;
+					}
+				}
+
+				img {
+					opacity: 0;
+					transition: opacity 0.3s ease-in-out;
+					width: 117px;
+				}
+			}
+		}
+	}
+}

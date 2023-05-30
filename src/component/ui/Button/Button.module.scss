@@ -1,0 +1,41 @@
+.auth {
+	@apply px-3 py-2 rounded-full border border-black;
+	transition: background-color 0.3s ease-in-out, text-color 0.3s ease-in-out;
+	&:hover {
+		@apply bg-dark text-white;
+	}
+}
+
+.accent {
+	@apply bg-accent text-white;
+	transition: background-color 0.3s ease-in-out;
+	&:hover {
+		@apply bg-subColor;
+	}
+}
+
+.secondColor {
+	@apply text-black border border-accent;
+	transition: background-color 0.3s ease-in-out, text-color 0.3s ease-in-out;
+	&:hover {
+		@apply bg-accent text-white;
+	}
+}
+
+.small {
+	@apply text-2xl;
+}
+
+.medium {
+	@apply text-2xl mx-auto py-5 rounded-full;
+	width: 294px;
+}
+
+.large {
+	width: 660px;
+	font-size: 40px;
+	padding: 44px 0;
+	margin: 0 auto;
+	line-height: 1;
+	border-radius: 90px;
+}
